@@ -37,8 +37,9 @@ end_date = max_date
 normalized_start_date = min_date
 normalized_end_date = end_date
 
-df = pd.read_parquet("Data/time_series_df.parquet")
-df_unfiltered = pd.read_parquet("Data/time_series_df_unfiltered.parquet")
+df = pd.read_parquet("data/time_series_df.parquet")
+df_unfiltered = pd.read_parquet("data/time_series_df_unfiltered.parquet")
+
 # Create two columns side by side
 col1, col2, col3 = st.columns([1, 1, 3])
 
